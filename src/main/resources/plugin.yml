@@ -11,10 +11,10 @@ api-version: 1.19
 commands:
   spawn:
     description: Teleport to the Server spawn.
-    usage: /spawn
+    usage: /spawn [fixed]
   setspawn:
     description: Set the Server spawn.
-    usage: /setspawn [none]
+    usage: /setspawn [clear]
   
 permissions:
   spawntp.*:
