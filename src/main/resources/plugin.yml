@@ -5,31 +5,27 @@ version: '${project.version}'
 author: Flashbang Hosting
 website: https://fb-hosting.net/
 
-main: net.fbhosting.farmingtp.FarmingTP
+main: net.fbhosting.spawntp.SpawnTP
 api-version: 1.19
 
-depend: 
-  - Multiverse-Core
-
 commands:
-  farming:
-    description: Teleport to the specified farming world.
-    usage: /farming [world]
+  spawn:
+    description: Teleport to the Server spawn.
+    usage: /spawn
+  setspawn:
+    description: Set the Server spawn.
+    usage: /setspawn [none]
   
 permissions:
-  farmingtp.*:
+  spawntp.*:
     description: Gives full access to the plugin.
     default: op;
     children:
-      farmingtp.teleport: true
-      farmingtp.reload: true
-      farmingtp.bypass: true
-  farmingtp.teleport:
-    description: Teleports yourself to the specified farming world.
+      spawntp.teleport: true
+      spawntp.admin: true
+  spawntp.teleport:
+    description: Teleport to the Server spawn.
     default: true
-  farmingtp.bypass:
-    description: Bypasses the teleport timeout.
-    default: op
-  farmingtp.reload:
-    description: Reloads the plugin.
+  spawntp.admin:
+    description: Set the Server spawn.
     default: op
