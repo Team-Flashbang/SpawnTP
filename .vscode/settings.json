@@ -4,5 +4,6 @@
     "NOSONAR",
     "setspawn",
     "spawntp"
-  ]
+  ],
+  "java.compile.nullAnalysis.mode": "automatic"
 }
